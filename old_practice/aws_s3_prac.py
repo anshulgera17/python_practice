@@ -18,3 +18,8 @@
 # conn = client('s3')  # again assumes boto.cfg setup, assume AWS S3
 # for key in conn.list_objects(Bucket='bucket-test-name-bbaacc')['Contents']:
 #     print(key['Key'])
+
+# Delete the image from bucket
+
+# s3 = boto3.client('s3')
+# s3.delete_object(Bucket='bucket-test-name-bbaacc', Key='test.jpg')
